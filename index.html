@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+     <script src="./scripts.js" defer></script>
+     <!-- Before using the shoelace components it has to be initialized through the script tag -->
+     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/components/button/button.js"></script>
+    <title>Tally Count</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Tally Count</h1>
+    </header>
+   
+    <!--
+    <aside class="controls">
+      <label>
+          <span>Display</span>
+          <select>
+             <option> Single </option>
+             <option> Multiple </option>
+          </select>
+         </label>
+
+         <label>
+           <span>Counter</span>
+           <select>
+             <option>Counter 1</option>
+             <option>Counter 2</option>
+             <option>Counter 3</option>
+           </select>
+         </label>
+
+       <button>Settings</button>
+       </aside>
+    -->
+    <main class="counter">
+      <input data-key="number"  class="counter_value" readonly value="0" >
+      <div class="counter_actions">
+        <sl-button  data-key="subtract" class="counter_button"  variant="neutral" pill>-</sl-button>
+        <sl-button data-key="add" class="counter_button counter_button_first">+</sl-button>
+      </div> 
+    </main>
+    <footer class="footer">
+      <p>Inspired by <a href="https://tallycount.app/">Tally Count</a>. Note that this is merely a practice project for learning JavaScript</p>
+    </footer>
+
+</body>
+</html>

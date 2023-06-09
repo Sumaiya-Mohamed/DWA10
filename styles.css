@@ -1,0 +1,100 @@
+:root {
+    --color-light-pink: #FFD9DA;
+    --color-medium-pink: #EA638C;
+    --color-dark-pink: #89023E;
+    --color-light-grey: #d2d6dc;
+    --color-white: #ffffff;
+}
+
+:root {
+    --color-green: #31c48d;
+    --color-white: #ffffff;
+    --color-dark-grey: #33333d;
+    --color-medium-grey: #424250;
+    --color-light-grey: #d2d6dc;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--color-medium-grey);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    text-align: center;
+    background-color: var(--color-light-pink);
+   
+}
+ header h1{
+    font-size: 3.5rem;
+    color:  var(--color-dark-grey);
+ }
+
+ .footer{
+    font-size: 1.3rem;
+    text-align: center;
+    background: var(--color-dark-grey);
+    color: var(--color-light-grey);
+    justify-self: flex-end;
+ }
+
+ .footer a {
+    color: var(--color-white);
+ }
+
+
+
+
+
+
+
+
+/* counter */
+.counter{
+    background: var(--color-dark-grey);
+}
+
+.counter_value{
+    width: 100%;
+    height: 18rem;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 900;
+    background: none; /* This makes the background see through */
+    color: var(--color-white);
+
+}
+
+.counter_button{
+    text-align: center;
+    width: 50%;
+    font-size: 5rem;
+    height: 10rem;
+    transition: transform 0.3s;
+    transform: translateY(0);
+
+
+}
+
+.counter_button:active{
+  background: var(--color-medium-grey);
+  transform: translateY(2%);
+}
+
+.counter_button:disabled {
+   opacity: 0.2;
+}
+.counter_actions{
+    display: flex;
+}
+
+.counter_button_first{
+    border-right: 1px solid var(--color-light-grey);
+}

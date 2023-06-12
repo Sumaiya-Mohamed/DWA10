@@ -1,11 +1,11 @@
-:root {
+/*:root {
     --color-light-pink: #FFD9DA;
     --color-medium-pink: #EA638C;
     --color-dark-pink: #89023E;
     --color-light-grey: #d2d6dc;
     --color-white: #ffffff;
 }
-
+*/
 :root {
     --color-green: #31c48d;
     --color-white: #ffffff;
@@ -29,7 +29,7 @@ body {
 
 .header{
     text-align: center;
-    background-color: var(--color-light-pink);
+    background-color: lightskyblue;
    
 }
  header h1{
@@ -79,8 +79,6 @@ body {
     height: 10rem;
     transition: transform 0.3s;
     transform: translateY(0);
-
-
 }
 
 .counter_button:active{
@@ -98,3 +96,6 @@ body {
 .counter_button_first{
     border-right: 1px solid var(--color-light-grey);
 }
+
+
+

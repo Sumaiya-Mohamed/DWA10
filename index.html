@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Before using the styling for the shoelace components import their stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/themes/light.css" />
     <link rel="stylesheet" href="./styles.css">
      <script src="./scripts.js" defer></script>
      <!-- Before using the shoelace components it has to be initialized through the script tag -->
@@ -40,8 +42,8 @@
     <main class="counter">
       <input data-key="number"  class="counter_value" readonly value="0" >
       <div class="counter_actions">
-        <sl-button  data-key="subtract" class="counter_button"  variant="neutral" pill>-</sl-button>
-        <sl-button data-key="add" class="counter_button counter_button_first">+</sl-button>
+        <sl-button  data-key="subtract" class="counter_button" id="sl__button" variant="primary" outline pill>-</sl-button>
+        <sl-button data-key="add" class="counter_button counter_button_first" variant="primary" outline pill>+</sl-button>
       </div> 
     </main>
     <footer class="footer">

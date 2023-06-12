@@ -40,4 +40,7 @@ subtract.addEventListener('click', subtractHandler)
 add.addEventListener('click', addHandler)
 
 
- 
+ const resetButton = document.querySelector('[data-reset]')
+ resetButton.addEventListener('click', () => {
+  number.value = 0
+ })
